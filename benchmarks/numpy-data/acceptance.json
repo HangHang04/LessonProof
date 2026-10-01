@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "lesson_id": "numpy-data",
+  "steps": [
+    {
+      "id": "load-data",
+      "expect": {
+        "outcome": "ok",
+        "stdout": ""
+      }
+    },
+    {
+      "id": "inspect-array",
+      "expect": {
+        "outcome": "ok",
+        "stdout_json": {
+          "shape": [
+            60,
+            40
+          ],
+          "first_value": 0,
+          "middle_value": 16
+        }
+      }
+    },
+    {
+      "id": "summarize",
+      "expect": {
+        "outcome": "ok",
+        "stdout_json": {
+          "minimum": 0,
+          "maximum": 20,
+          "mean_5dp": "6.14875"
+        }
+      }
+    }
+  ]
+}

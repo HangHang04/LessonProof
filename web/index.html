@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="lessonproof-token" content="__SESSION_TOKEN__">
+  <meta name="theme-color" content="#194e42">
+  <title>LessonProof · 课前试跑</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23194e42'/%3E%3Ctext x='12' y='29' font-size='28' fill='white' font-family='serif'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/lesson.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">跳到主要内容</a>
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brand-mark">L<span>p</span></span><span>LessonProof<small>课前试跑工作台</small></span></a>
+    <div class="workspace-label">你的教学空间 <span>LOCAL</span></div>
+    <nav aria-label="主导航">
+      <a href="#home" data-nav="home" title="工作台"><span aria-hidden="true">▦</span>工作台</a>
+      <a href="#deliveries" data-nav="deliveries" title="交付记录"><span aria-hidden="true">▤</span>交付记录</a>
+      <a href="#connections" data-nav="connections" title="环境与连接"><span aria-hidden="true">⌘</span>环境与连接</a>
+    </nav>
+    <div class="sidebar-note"><span class="note-orbit" aria-hidden="true">✳</span><strong>先试一遍，再交给学生。</strong><p>让每一次课程交付，<br>都有可以核对的依据。</p></div>
+    <div class="local-user"><span class="avatar">师</span><span>本地教师<small>材料保存在这台电脑</small></span><span class="online-dot" aria-hidden="true"></span></div>
+  </aside>
+  <main id="content" tabindex="-1">
+    <header class="topbar"><div id="breadcrumb">教学空间 <span>/</span> 工作台</div><span class="top-note"><span class="online-dot"></span>本地工作空间</span></header>
+    <div id="view"></div>
+  </main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="import-dialog" aria-labelledby="import-title" aria-describedby="import-description">
+    <form method="dialog"><button class="dialog-close" aria-label="关闭导入说明">×</button></form>
+    <p class="eyebrow">COURSE IMPORT</p>
+    <h2 id="import-title">导入一份完整的课程</h2>
+    <p id="import-description">选择 ZIP 课程包，文件大小不超过 16 MiB。材料检查完成后，再由你确认是否开始试跑。</p>
+    <div class="import-files"><strong>ZIP 根目录需要这些文件</strong><pre>course.json       课程信息与文件校验值
+lesson.md         讲义
+lesson.ipynb      按步骤执行的 Notebook
+acceptance.json   独立验收标准
+reference.md      验收依据
+LICENSE.md        材料许可
+data/             课程用到的数据</pre></div>
+    <p class="small muted">可从仓库的 benchmarks 课程目录开始整理。学生交付包用于教学，继续试跑需要包含验收标准的完整课程包。</p>
+    <div class="import-actions"><a href="https://github.com/HangHang04/LessonProof#导入自己的课程" target="_blank" rel="noopener">查看格式说明 ↗</a><button class="btn primary" id="choose-file">选择课程 ZIP</button></div>
+  </dialog>
+  <input type="file" id="upload" accept=".zip,application/zip" hidden>
+</body>
+</html>

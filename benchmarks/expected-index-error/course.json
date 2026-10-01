@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "lesson_id": "expected-index-error",
+  "title": "读懂列表越界的错误信息",
+  "source_kind": "public_course_adaptation",
+  "environment": {
+    "python": "3.11.15",
+    "packages": {}
+  },
+  "learner_files": [
+    "lesson.md",
+    "lesson.ipynb",
+    "LICENSE.md"
+  ],
+  "steps": [
+    {
+      "id": "observe-error",
+      "inputs": []
+    },
+    {
+      "id": "explain-index",
+      "inputs": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/a765c2c50b91d7618f803e12c23eef6607db2390/episodes/09-errors.md",
+      "revision": "a765c2c50b91d7618f803e12c23eef6607db2390",
+      "sha256": "21ca600020ae071f274dc1a79f2ed0fb3628157e840b3d19afaab6680ca6d88d",
+      "applies_to": [
+        "lesson.md",
+        "lesson.ipynb",
+        "reference.md"
+      ],
+      "adaptation": "第一格函数原样节选第 39–47 行；中文说明；第二格新增索引理解检查"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/a765c2c50b91d7618f803e12c23eef6607db2390/LICENSE.md",
+      "revision": "a765c2c50b91d7618f803e12c23eef6607db2390",
+      "sha256": "0c8fa42d7d7166e5b1127d93f847543dac03cabba94d5ab9f49b546e304098ff",
+      "applies_to": [
+        "LICENSE.md"
+      ],
+      "adaptation": "verbatim"
+    }
+  ],
+  "files": {
+    "lesson.md": "fea59989286e60ae33945c1c3923e56ed230b58265316c6c622ac8bdfb3c1fee",
+    "lesson.ipynb": "0f8da4440a1e23e903a216a0ace66a0dfb0a7dd29d6824d3e5b180f8089c2036",
+    "acceptance.json": "70d196ae9ecf49d4d3c699721f48b568cdd106f1f6d15334295251591293c523",
+    "reference.md": "534ec88236fa4f3677f0299feaf454f58b03d666c21100a149261e2dea60a8cc",
+    "LICENSE.md": "0c8fa42d7d7166e5b1127d93f847543dac03cabba94d5ab9f49b546e304098ff"
+  }
+}

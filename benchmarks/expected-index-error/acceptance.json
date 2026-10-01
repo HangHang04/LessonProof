@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "lesson_id": "expected-index-error",
+  "steps": [
+    {
+      "id": "observe-error",
+      "expect": {
+        "outcome": "error",
+        "error_type": "IndexError",
+        "message_contains": "list index out of range",
+        "stdout": ""
+      }
+    },
+    {
+      "id": "explain-index",
+      "expect": {
+        "outcome": "ok",
+        "stdout_json": {
+          "item_count": 3,
+          "last_valid_index": 2
+        }
+      }
+    }
+  ]
+}

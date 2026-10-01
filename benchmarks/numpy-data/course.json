@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "lesson_id": "numpy-data",
+  "title": "数组数据读取与统计",
+  "source_kind": "public_course_adaptation",
+  "environment": {
+    "python": "3.11.15",
+    "packages": {
+      "numpy": "1.26.4"
+    }
+  },
+  "learner_files": [
+    "lesson.md",
+    "lesson.ipynb",
+    "LICENSE.md",
+    "data/inflammation-01.csv"
+  ],
+  "steps": [
+    {
+      "id": "load-data",
+      "inputs": [
+        "data/inflammation-01.csv"
+      ]
+    },
+    {
+      "id": "inspect-array",
+      "inputs": []
+    },
+    {
+      "id": "summarize",
+      "inputs": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/a765c2c50b91d7618f803e12c23eef6607db2390/episodes/02-numpy.md",
+      "revision": "a765c2c50b91d7618f803e12c23eef6607db2390",
+      "sha256": "a0ca18db59b888dcfa6d00e5680465720e4a8c7feed3b369b2c92d053c592ad3",
+      "applies_to": [
+        "lesson.md",
+        "lesson.ipynb",
+        "reference.md"
+      ],
+      "adaptation": "中文节选；路径改为 data/；添加步骤 ID、JSON 输出和五位小数字符串格式；原文件行号见 reference.md"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/a765c2c50b91d7618f803e12c23eef6607db2390/episodes/data/inflammation-01.csv",
+      "revision": "a765c2c50b91d7618f803e12c23eef6607db2390",
+      "sha256": "e2a32ef637a2f03bca9227bc25ab845a0ebe55d736cfe2684618fc3af70edb23",
+      "applies_to": [
+        "data/inflammation-01.csv"
+      ],
+      "adaptation": "verbatim"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/swcarpentry/python-novice-inflammation/a765c2c50b91d7618f803e12c23eef6607db2390/LICENSE.md",
+      "revision": "a765c2c50b91d7618f803e12c23eef6607db2390",
+      "sha256": "0c8fa42d7d7166e5b1127d93f847543dac03cabba94d5ab9f49b546e304098ff",
+      "applies_to": [
+        "LICENSE.md"
+      ],
+      "adaptation": "verbatim"
+    }
+  ],
+  "files": {
+    "lesson.md": "24294c9687ee36c4af5b6ff14db88dc4185d961198b121896091d4f3fb9bb3d6",
+    "lesson.ipynb": "68bdd68ea5f6dfbfc8ba85c67e5bdee131501dabae055694a4a95f6804ec39d2",
+    "acceptance.json": "334612ed9ef6190c33b34cee376d1bf93020a1fd638c9c080a8d04d1460abaf3",
+    "reference.md": "dca62bf5b1bf772240d5ed05d6d3a63d8d3216b61aa76a089fe6e07188f76a58",
+    "LICENSE.md": "0c8fa42d7d7166e5b1127d93f847543dac03cabba94d5ab9f49b546e304098ff",
+    "data/inflammation-01.csv": "e2a32ef637a2f03bca9227bc25ab845a0ebe55d736cfe2684618fc3af70edb23"
+  }
+}

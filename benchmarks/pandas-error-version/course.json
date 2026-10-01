@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "lesson_id": "pandas-error-version",
+  "title": "缺失值与整数转换",
+  "source_kind": "historical_issue_adaptation",
+  "environment": {
+    "python": "3.11.15",
+    "packages": {
+      "pandas": "2.2.3",
+      "numpy": "1.26.4"
+    }
+  },
+  "learner_files": [
+    "lesson.md",
+    "lesson.ipynb",
+    "LICENSE.md",
+    "data/surveys.csv"
+  ],
+  "steps": [
+    {
+      "id": "load-surveys",
+      "inputs": [
+        "data/surveys.csv"
+      ]
+    },
+    {
+      "id": "cast-weight",
+      "inputs": []
+    },
+    {
+      "id": "inspect-missing",
+      "inputs": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/datacarpentry/python-ecology-lesson/728c22a29a9089ea0cd73d54bde3f3e82cf2849f/episodes/04-data-types-and-format.md",
+      "revision": "728c22a29a9089ea0cd73d54bde3f3e82cf2849f",
+      "sha256": "f18f9fc03e561495cf6082ae48f1c6cb60fba7d5ef5c4c2a090ff5d11b546783",
+      "applies_to": [
+        "lesson.md",
+        "lesson.ipynb",
+        "reference.md",
+        "upstream-before.md"
+      ],
+      "adaptation": "旧讲义中文缩编，保留过时名称；upstream-before.md 保存原文第 270–292 行；增加缺失记录检查"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/datacarpentry/python-ecology-lesson/acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd/episodes/04-data-types-and-format.md",
+      "revision": "acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd",
+      "sha256": "0352b63066294163bdeb24027e0159ed8e3b09642a1ec79cba40f28c3f95d1dc",
+      "applies_to": [
+        "reference.md",
+        "upstream-after.md"
+      ],
+      "adaptation": "upstream-after.md 保存原文第 270–292 行；用于确定讲义修复目标"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/datacarpentry/python-ecology-lesson/acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd/episodes/data/surveys.csv",
+      "revision": "acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd",
+      "sha256": "0b4ad06161ed67d5a1d5ae418a6ed6d76a684207e40c747b6fc5cfba53e93116",
+      "applies_to": [
+        "data/surveys.csv"
+      ],
+      "adaptation": "保留 record_id 1、2、63、64、65，全部字段及原值；CSV 换行为 LF；原数据 CC0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/datacarpentry/python-ecology-lesson/acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd/LICENSE.md",
+      "revision": "acb60886d7bb0c7d4e914ecc562d7d9d0afed2bd",
+      "sha256": "1b7f11e8511bea664a324ad90a38f1b19f844dc48a245dd1d7bbcd261689bb7a",
+      "applies_to": [
+        "LICENSE.md"
+      ],
+      "adaptation": "verbatim"
+    }
+  ],
+  "files": {
+    "lesson.md": "9704c99693c2f444f91b18ebc5fccff52faf1cf868d013c3488eb78e49363589",
+    "lesson.ipynb": "8dea7f48a4494dbbc3c33f8765ae749dd329bee85f8779529ed99d14e7768da6",
+    "acceptance.json": "897ef31d6d0570c1db06207dc334d76bba7935621a229e4c0e12caa4359b7812",
+    "reference.md": "3eff1f00e5bf248526d7d32e8d0ec805e3f2e98249fdac71458c5ec422606d9b",
+    "LICENSE.md": "1b7f11e8511bea664a324ad90a38f1b19f844dc48a245dd1d7bbcd261689bb7a",
+    "data/surveys.csv": "04f7cdf12a287cf7bfa2fea28e678dca47a45411c802ccae00eb9ad4bfe0aecf",
+    "upstream-before.md": "cd5b27a45073bd92212ca5b6391e54b31c902dc72bd0dfcb7525ccaccb78431c",
+    "upstream-after.md": "e35437bf3aa4f62fb2d4fa83e1fbfe5b63bff3bd9ca5250ce2f463a44a20bf4a"
+  }
+}

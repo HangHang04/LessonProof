@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "lesson_id": "pandas-error-version",
+  "steps": [
+    {
+      "id": "load-surveys",
+      "expect": {
+        "outcome": "ok",
+        "stdout": ""
+      }
+    },
+    {
+      "id": "cast-weight",
+      "expect": {
+        "outcome": "error",
+        "error_type": "IntCastingNaNError",
+        "message_contains": "Cannot convert non-finite values (NA or inf) to integer",
+        "stdout": ""
+      }
+    },
+    {
+      "id": "inspect-missing",
+      "expect": {
+        "outcome": "ok",
+        "stdout_json": {
+          "missing_weight_record_ids": [
+            1,
+            2
+          ],
+          "rows": 5
+        }
+      }
+    }
+  ]
+}
