@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="description" content="LessonProof 实训课程课前验证与交付工作台的真实操作演示。观看讲义问题定位、教师审核、原标准复测和学生交付。">
+ <meta name="theme-color" content="#255c46">
+ <title>LessonProof 产品演示</title>
+ <style>
+  :root{color-scheme:light;--ink:#20372d;--muted:#64756a;--green:#255c46;--line:#d4ded4}
+  *{box-sizing:border-box}body{margin:0;background:#f4f5f0;color:var(--ink);font-family:system-ui,"Microsoft YaHei",sans-serif;line-height:1.7}
+  main{width:min(1120px,calc(100% - 44px));margin:38px auto 60px}header{display:flex;align-items:center;gap:12px;margin-bottom:35px}.mark{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--green);color:white;font-weight:750;font-size:24px}.brand{font-size:22px;font-weight:700}header>span:last-child{margin-left:auto;color:var(--muted);font-size:14px}
+  h1{font-size:clamp(28px,4.2vw,46px);line-height:1.35;letter-spacing:-.8px;margin:0 0 12px}p{color:var(--muted);margin:0 0 22px}.meta{font-size:15px;margin-bottom:25px}video{display:block;width:100%;aspect-ratio:16/9;background:#20372d;border-radius:17px;box-shadow:0 12px 36px #18371b15}figure{margin:0}figcaption{color:var(--muted);font-size:13px;margin:13px 3px 22px}
+  .actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:35px}a{color:var(--green);text-underline-offset:4px}.button{padding:11px 18px;border:1px solid var(--line);border-radius:11px;text-decoration:none;background:#fff;font-size:15px}.primary{background:var(--green);color:#fff;border-color:var(--green)}h2{font-size:21px;margin:25px 0 15px}.chapters{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}button{font:inherit;cursor:pointer;text-align:left;border:1px solid var(--line);padding:12px 15px;background:#fff;border-radius:10px;color:var(--ink);font-size:14px}button:hover{background:#e3ecdf}button span{font-variant-numeric:tabular-nums;color:var(--green);margin-right:9px}button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #77aa86;outline-offset:4px}
+  details{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}summary{cursor:pointer;color:var(--ink)}details p{margin:15px 0 5px}footer{margin-top:30px;color:var(--muted);font-size:13px}#playback-error{margin-top:14px;padding:14px;background:#fbf2df;border-radius:10px;color:var(--ink)}[hidden]{display:none!important}
+  @media(max-width:680px){main{width:calc(100% - 28px);margin-top:22px}header{margin-bottom:26px}header>span:last-child{font-size:12px}.chapters{grid-template-columns:repeat(2,1fr)}video{border-radius:11px}.actions{gap:9px}.button{font-size:14px;padding:10px 13px}figcaption{font-size:12px}}
+ </style>
+</head>
+<body>
+<main>
+ <header><span class="mark" aria-hidden="true">Lp</span><span class="brand">LessonProof</span><span>产品实录</span></header>
+ <h1>把问题留在课前。</h1>
+ <p>沿着学生的操作路径试跑课程，让每一次交付都有可以核对的依据。</p>
+ <p class="meta">2 分 37 秒 · 1080p · 中文配音与字幕</p>
+ <figure>
+  <video id="demo" controls playsinline webkit-playsinline preload="metadata" poster="poster.png" aria-label="LessonProof 产品演示视频">
+   <source src="LessonProof-demo-1080p.mp4" type="video/mp4">
+   <p>请使用下方链接下载视频观看。</p>
+  </video>
+  <p id="playback-error" role="status" hidden>视频暂未加载完成。可以刷新页面，或使用下方“下载视频”链接观看。</p>
+  <figcaption>画面来自实际运行，教师操作由开发者模拟。配音为 AI 生成。视频展示本地课程验证与交付流程。</figcaption>
+ </figure>
+ <div class="actions"><a class="button primary" href="LessonProof-demo-1080p.mp4" download>下载视频</a><a class="button" href="https://github.com/HangHang04/LessonProof" target="_blank" rel="noopener noreferrer">项目与复现方法 ↗</a></div>
+ <h2>选择一段观看</h2>
+ <div class="chapters" aria-label="视频章节">
+  <button data-time="0"><span>00:00</span>项目介绍</button><button data-time="13.8"><span>00:14</span>课程材料</button><button data-time="31.2667"><span>00:31</span>实际试跑</button>
+  <button data-time="49.0667"><span>00:49</span>问题定位</button><button data-time="67.9333"><span>01:08</span>修订与复测</button><button data-time="85.7667"><span>01:26</span>审核与交付</button>
+  <button data-time="103.7333"><span>01:44</span>教学预期报错</button><button data-time="121.7667"><span>02:02</span>运行证据</button><button data-time="142.1667"><span>02:22</span>流程总结</button>
+ </div>
+ <details><summary>课程来源与验证范围</summary>
+  <p>历史讲义案例改编自 <a href="https://github.com/datacarpentry/python-ecology-lesson/pull/571/files" target="_blank" rel="noopener noreferrer">Data Carpentry 的已合并修订</a>；列表越界案例来自 <a href="https://swcarpentry.github.io/python-novice-inflammation/09-errors.html" target="_blank" rel="noopener noreferrer">Software Carpentry 的 Errors and Exceptions</a>。原作者为 The Carpentries。讲义及中文改编按 CC BY 4.0，示例代码按 MIT；数据及完整许可说明随课程包保存。</p>
+  <p>课程包记录固定上游提交、原始文件哈希、署名和改编范围。本视频使用本地 Ollama、WSL 隔离环境与本地 Git 归档。真实教师试用与人工对照数据将在后续采集。</p>
+ </details>
+ <footer>LessonProof 团队 · 2026 年 10 月</footer>
+</main>
+<script>
+ const video=document.getElementById('demo');
+ const error=document.getElementById('playback-error');
+ video.addEventListener('error',()=>{error.hidden=false});
+ video.addEventListener('loadedmetadata',()=>{error.hidden=true});
+ document.querySelectorAll('[data-time]').forEach(button=>button.addEventListener('click',()=>{video.currentTime=Number(button.dataset.time);video.play().catch(()=>{video.focus()});video.scrollIntoView({block:'center',behavior:'instant'})}));
+</script>
+</body>
+</html>
